@@ -9,3 +9,4 @@ body:
       label: Requested feature
     validations:
       required: true
+

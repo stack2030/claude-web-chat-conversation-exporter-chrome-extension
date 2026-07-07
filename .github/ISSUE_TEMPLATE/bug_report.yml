@@ -9,3 +9,4 @@ body:
       label: What happened?
     validations:
       required: true
+

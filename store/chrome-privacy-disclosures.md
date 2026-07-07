@@ -11,3 +11,4 @@ No remote code. Exporter scripts are bundled inside the extension package.
 ## Data collection
 
 No user data collected.
+

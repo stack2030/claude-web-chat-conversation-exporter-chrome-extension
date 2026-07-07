@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Claude Web Chat Conversation Exporter",
   "version": "0.1.0",
-  "description": "Export Claude.ai web chat conversations locally to Markdown without a backend, analytics, tracking, or third-party upload.",
+  "description": "Export Claude.ai web chat conversations locally to Markdown without a Stack2030 backend, analytics, tracking, or third-party upload.",
   "action": { "default_popup": "popup.html", "default_title": "Claude Web Chat Conversation Exporter" },
   "permissions": ["activeTab", "scripting"],
   "host_permissions": [
@@ -10,3 +10,4 @@
   ],
   "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
 }
+

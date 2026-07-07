@@ -7,4 +7,5 @@
 - Initial Chrome extension baseline.
 - Bundled exporter script injection after explicit user click.
 - Local Markdown download flow.
-- No backend, analytics, tracking, or third-party upload.
+- No Stack2030 backend, analytics, tracking, or third-party upload.
+
