@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest an improvement for Claude Web Chat Conversation Exporter
+title: "[Feature]: "
+labels: ["type:feature", "status:backlog"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Requested feature
+    validations:
+      required: true

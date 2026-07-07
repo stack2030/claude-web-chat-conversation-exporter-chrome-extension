@@ -1,0 +1,12 @@
+name: Provider UI breakage
+description: Report supported chat UI changes that break export
+title: "[Provider UI breakage]: "
+labels: ["type:provider-breakage", "status:needs-info"]
+body:
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider
+      options: ["ChatGPT", "Claude", "Both"]
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+name: Bug report
+description: Report a problem with Claude Web Chat Conversation Exporter
+title: "[Bug]: "
+labels: ["type:bug", "status:needs-info"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+    validations:
+      required: true
