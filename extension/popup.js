@@ -1,0 +1,6 @@
+const targets = {
+    "claude": { label: "Claude", hosts: ["claude.ai"], script: "exporters/claude-web-chat-conversation-exporter-v0.1.6.js" }
+};
+const statusEl=document.getElementById("status");function setStatus(m,k=""){statusEl.textContent=m;statusEl.className="status"+(k?" "+k:"")}function host(u){try{return new URL(u).hostname}catch{return""}}async function exportCurrentChat(provider){const target=targets[provider];const [tab]=await chrome.tabs.query({active:true,currentWindow:true});if(!tab||!tab.id||!tab.url||!target.hosts.includes(host(tab.url))){setStatus("Please open the browser tab with the chat you want to export.","error");return}try{setStatus("Starting export...");await chrome.scripting.executeScript({target:{tabId:tab.id},files:[target.script],world:"MAIN"});setStatus("Export started. Check your downloads.","ok")}catch(e){setStatus("Export failed: "+(e&&e.message?e.message:String(e)),"error")}}document.querySelectorAll("[data-provider]").forEach(b=>b.addEventListener("click",()=>exportCurrentChat(b.dataset.provider)));
+
+
