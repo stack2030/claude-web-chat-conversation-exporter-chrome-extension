@@ -9,17 +9,29 @@ Privacy-first means a Claude-only user should not need an extension that also as
 Extension: **v0.1.1**  
 Bundled exporter: **Claude Web Chat Conversation Exporter v0.1.6**
 
-## Installable extension folder
+## What this repo contains
 
-The installable unpacked Chrome extension is in:
+There are two relevant extension locations:
 
-```text
+1. xtension/  
+   The clean installable unpacked Chrome extension folder. Use this for manual local installation.
+
+2. root-level source files such as manifest.json, popup.js, icons/, and xporters/  
+   Repository source/build files. These are kept for development and packaging transparency.
+
+For manual installation from the repository, use:
+
+`	ext
 extension/
-```
+`
 
-Use **that folder** when loading the extension manually.
+For direct ZIP installation, use the GitHub release asset:
 
-Do not select the whole repository folder if you want the clean installable extension folder.
+[claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip](https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/download/v0.1.1/claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip)
+
+Release page:
+
+https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/tag/v0.1.1
 
 ## What this extension does
 
@@ -51,17 +63,17 @@ It does not send conversation content to Stack2030 or any unrelated third-party 
 2. Open Chrome or a Chromium browser.
 3. Open:
 
-```text
+`	ext
 chrome://extensions/
-```
+`
 
 4. Turn on **Developer mode**.
 5. Click **Load unpacked**.
 6. Select this folder inside the repository:
 
-```text
+`	ext
 extension/
-```
+`
 
 7. Pin the extension from the browser extensions menu if you want it visible in the toolbar.
 8. Open a Claude.ai conversation.
@@ -72,37 +84,39 @@ extension/
 
 Chrome cannot load a ZIP directly as an unpacked extension.
 
-Use this flow:
+Download this GitHub release asset:
 
-1. Download the release ZIP:
+[claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip](https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/download/v0.1.1/claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip)
 
-```text
-claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip
-```
+Or open the release page:
 
-2. Extract the ZIP to a local folder.
-3. Open:
+https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/tag/v0.1.1
 
-```text
+Then:
+
+1. Extract the ZIP to a local folder.
+2. Open:
+
+`	ext
 chrome://extensions/
-```
+`
 
-4. Turn on **Developer mode**.
-5. Click **Load unpacked**.
-6. Select the extracted folder that contains:
+3. Turn on **Developer mode**.
+4. Click **Load unpacked**.
+5. Select the extracted folder that contains:
 
-```text
+`	ext
 manifest.json
 popup.html
 popup.js
 popup.css
 exporters/
 icons/
-```
+`
 
-7. Pin the extension if needed.
-8. Open a Claude.ai conversation.
-9. Click **Export Claude chat**.
+6. Pin the extension if needed.
+7. Open a Claude.ai conversation.
+8. Click **Export Claude chat**.
 
 ## Install option 3: Chrome Web Store
 
@@ -118,19 +132,19 @@ After approval, the normal install flow will be:
 
 ## Packed .crx note
 
-Chrome has a **Pack extension** option in `chrome://extensions/` developer mode.
+Chrome has a **Pack extension** option in chrome://extensions/ developer mode.
 
-That can create a local `.crx` package, but it is not the recommended public install path. Chrome may warn about or restrict non-store `.crx` installs.
+That can create a local .crx package, but it is not the recommended public install path. Chrome may warn about or restrict non-store .crx installs.
 
 For public users before Chrome Web Store approval, prefer:
 
-```text
+`	ext
 Download release ZIP -> extract -> Load unpacked
-```
+`
 
 ## Folder layout
 
-```text
+`	ext
 extension/
 ├─ manifest.json
 ├─ popup.html
@@ -143,7 +157,7 @@ extension/
    ├─ icon32.png
    ├─ icon48.png
    └─ icon128.png
-```
+`
 
 ## Bundled exporter
 
@@ -174,8 +188,14 @@ https://stack2030.github.io/claude-web-chat-conversation-exporter-chrome-extensi
 GitHub repo:  
 https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension
 
+All releases:  
+https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases
+
 Extension release:  
 https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/tag/v0.1.1
+
+Direct release ZIP:  
+https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/download/v0.1.1/claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip
 
 Bundled exporter release:  
 https://github.com/stack2030/claude-web-chat-conversation-exporter/releases/tag/v0.1.6
@@ -184,9 +204,9 @@ https://github.com/stack2030/claude-web-chat-conversation-exporter/releases/tag/
 
 See:
 
-```text
+`	ext
 SECURITY.md
-```
+`
 
 Do not paste private conversation content into GitHub issues unless you intentionally choose to share it.
 

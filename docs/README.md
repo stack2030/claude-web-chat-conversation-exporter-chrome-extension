@@ -11,28 +11,40 @@ Bundled exporter: **Claude Web Chat Conversation Exporter v0.1.6**
 
 The installable unpacked Chrome extension is in the repository folder:
 
-```text
+`	ext
 extension/
-```
+`
 
 Use **that folder** for manual installation.
+
+## Release ZIP download
+
+For users who do not want to clone the repo, download the GitHub release asset:
+
+[claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip](https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/download/v0.1.1/claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip)
+
+Release page:
+
+https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/tag/v0.1.1
+
+Chrome cannot load a ZIP directly as an unpacked extension. Extract the ZIP first, then load the extracted folder.
 
 ## Install option 1: Clone/download repo, then Load unpacked
 
 1. Download or clone the repository.
 2. Open:
 
-```text
+`	ext
 chrome://extensions/
-```
+`
 
 3. Turn on **Developer mode**.
 4. Click **Load unpacked**.
 5. Select:
 
-```text
+`	ext
 extension/
-```
+`
 
 6. Pin the extension if needed.
 7. Open a Claude.ai conversation.
@@ -41,33 +53,29 @@ extension/
 
 ## Install option 2: Download release ZIP, extract, then Load unpacked
 
-Chrome cannot load a ZIP directly as an unpacked extension.
-
 1. Download:
 
-```text
-claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip
-```
+[claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip](https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/download/v0.1.1/claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip)
 
 2. Extract the ZIP.
 3. Open:
 
-```text
+`	ext
 chrome://extensions/
-```
+`
 
 4. Turn on **Developer mode**.
 5. Click **Load unpacked**.
 6. Select the extracted folder containing:
 
-```text
+`	ext
 manifest.json
 popup.html
 popup.js
 popup.css
 exporters/
 icons/
-```
+`
 
 ## Install option 3: Chrome Web Store
 
@@ -94,8 +102,14 @@ It does not send conversation content to Stack2030 or any unrelated third-party 
 GitHub repo:  
 https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension
 
+All releases:  
+https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases
+
 Extension release:  
 https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/tag/v0.1.1
+
+Direct release ZIP:  
+https://github.com/stack2030/claude-web-chat-conversation-exporter-chrome-extension/releases/download/v0.1.1/claude-web-chat-conversation-exporter-chrome-extension-v0.1.1-unpacked.zip
 
 Bundled exporter release:  
 https://github.com/stack2030/claude-web-chat-conversation-exporter/releases/tag/v0.1.6
