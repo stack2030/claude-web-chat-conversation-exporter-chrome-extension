@@ -10,5 +10,6 @@ No remote code. Exporter scripts are bundled inside the extension package.
 
 ## Data collection
 
-No user data collected.
+No user data collected. Conversation content is not sent to Stack2030 or any unrelated third-party service.
+
 
